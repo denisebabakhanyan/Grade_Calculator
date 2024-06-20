@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id = "course">
+      <h1 style="text-align:center;"> Introduction to the World of Programming </h1>
+      <table>
+        <tr>
+          <th> Components</th>
+          <th> Percentage</th>
+        </tr>
+        <tr>
+          <td> Participation </td>
+          <td> <span class = "percent" id = "Participation_Percentage">10</span>%</td>
+        </tr>
+        <tr>
+          <td> HW </td>
+          <td> <span class = "percent" id = "HW_Percentage">20</span>%</td>
+        </tr>
+        <tr>
+          <td> Project M1 </td>
+          <td> <span class = "percent" id = "PM1_Percentage">20</span>%</td>
+        </tr>
+        <tr>
+          <td> Project M2 </td>
+          <td> <span class = "percent" id = "PM2_Percentage">20</span>%</td>
+        </tr>
+        <tr>
+          <td> Final Project </td>
+          <td> <span class = "percent" id = "FProject_Percentage">30</span>%</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id = "grades">
+      <h2><span style='font-size:50px;'>&#127891;</span> AUA Student Profile</h2>
+      <p> <span id = "first_name">First Name:</span> Denise </p>
+      <p> <span id = "last_name">Last Name:</span> Babakhanyan </p>
+      <p> <span id = "major">Major:</span> Business </p>
+      <p> <span id = "student_ID">Student ID:</span> A09170312
+      <p> <span id = "class_name">Class:</span> CSE120 
+      </p>
+      <h3> Current Grades </h3>
+      <table>
+        <tr>
+          <th>Components</th>
+          <th>Current Grades</th>
+        </tr>
+        <tr>
+          <td>Participation</td>
+          <td><input type = "number" id = "PartGrade" value="" onkeyup="checkGrade(event)"></td>
+        </tr>
+        <tr>
+          <td>HW</td>
+          <td><input type = "number" id = "HWGrade" value="" onkeyup="checkGrade(event)"></td>
+        </tr>
+        <tr>
+          <td>Project M1</td>
+          <td><input type = "number" id = "M1Garde" value="" onkeyup="checkGrade(event)"></td>
+        </tr>
+        <tr>
+          <td>Project M2</td>
+          <td><input type = "number" id = "M2Grade" value="" onkeyup="checkGrade(event)"></td>
+        </tr>
+        <tr>
+          <td>Final Project</td>
+          <td><input type = "number" id = "FProjectGrade" value="" onkeyup="checkGrade(event)"></td>
+        </tr>
+      </table>
+      <div>
+      <p><button onclick="CalculateGrade()"> Calculate Current Total Grade </button></p>
+      </div>
+      <h2> Your Current Total Grade is <span id = "total_grade">...</span></h2>
+
+    </div>  
+
+  </body>
+</html>
