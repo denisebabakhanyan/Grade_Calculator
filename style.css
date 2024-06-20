@@ -1,0 +1,34 @@
+
+body, html {
+  background-color: lavender;
+  margin: 0;
+}
+
+#course span 
+{
+  font-weight: bold;
+}
+
+#grades span
+{
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lavenderblush;
+}
+
+#total_grade {
+  color: red;
+}
